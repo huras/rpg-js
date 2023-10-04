@@ -94,14 +94,10 @@ export class World {
         return this.gameGrid[x][y].character_or_artifact;
     }
 
-    async tick() {
-        for(let day = 0; day < 1; day++) { 
-            for (let t = 0; t < 24; t += 0.1) {
-                for (const character of this.characters) {
-                    t = Math.floor(Number.parseFloat(t.toFixed(2)) * 10) / 10;
-                    await character.gameTick(t);
-                }
-            }
+    async tick(t) {
+        t = Math.floor(Number.parseFloat(t.toFixed(2)) * 10) / 10;
+        for (const character of this.characters) {
+            await character.gameTick(t);
         }
     }
 }

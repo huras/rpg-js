@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "papaparse": "^5.3.2",
+    "phaser": "^3.60.0",
     "select2": "^4.1.0-rc.0",
     "sweetalert": "^2.1.2"
   }
