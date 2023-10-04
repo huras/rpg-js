@@ -1,0 +1,8 @@
+node_modules
+.idea
+/nbproject/private/
+.phpintel
+.DS_Store
+
+# remove build files
+public/src/scripts/*
